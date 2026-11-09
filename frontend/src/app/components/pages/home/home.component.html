@@ -1,0 +1,23 @@
+<app-search></app-search>
+<div class="row">
+    <div class="container" *ngFor="let item of roomsWithImages">
+        <a routerLink="/room/{{item.room._id}}">
+            <img height="200" width="200" src="{{item.imageData}}" [alt]="item.room.roomNumber" />
+            <div class="number">
+                Room Number: {{item.room.roomNumber}}
+            </div>
+            <div class="typology">
+                Typology: {{item.room.typology}}
+            </div>
+            <div class="dailyPrice">
+                Daily Price: {{item.room.dailyPrice | currency}}
+            </div>
+            <div class="capacity">
+                Capacity: {{item.room.capacity}}
+            </div>
+            <div class="isVacant">
+                Available: {{item.room.isVacant}}
+            </div>
+        </a>
+    </div>
+</div>

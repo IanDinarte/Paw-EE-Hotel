@@ -1,0 +1,57 @@
+<header>
+    <nav>
+        <div class="header-title">
+            <a href="/">
+                <img class="main" height="125" width="125" src="/assets/niceGuy.png">
+                Nice Guy Hotel™
+            </a>
+        </div>
+        <div class="header-options">
+
+            <div class="header-option">
+                <a>Accounts</a>
+                <div class="dropdown">
+                    <a href="/admin/manage-accounts/admin">Admins</a>
+                    <a href="/admin/manage-accounts/admin/new">New Admin</a>
+                    <a href="/admin/manage-accounts/staff">Staffs</a>
+                    <a href="/admin/manage-accounts/staff/new">New Staff</a>
+                    <a href="/admin/manage-accounts/customer">Customer</a>
+                    <a href="/admin/manage-accounts/customer/new">New Customer</a>
+                </div>
+            </div>
+
+            <div class="header-option">
+                <a href="/admin/manage-rooms">Rooms</a>
+                <div class="dropdown">
+                    <a href="/admin/manage-rooms/new">New Room</a>
+                </div>
+            </div>
+
+            <div class="header-option">
+                <a href="/staff/manage-reservations">Reservations</a>
+                <div class="dropdown">
+                    <a href="/staff/manage-reservations/new">New Reservation</a>
+                </div>
+            </div>
+
+            <div class="header-option">
+                <a href="/staff/manage-giftCards">GiftCards</a>
+                <div class="dropdown">
+                    <a href="/staff/manage-giftCards/new">New GiftCard</a>
+                </div>
+            </div>
+
+            <div class="header-option">
+                <a href="/login">Login</a>
+            </div>
+            <div class="header-option">
+                <a href="/login/register">Register</a>
+            </div>
+            <div class="header-option">
+                <form action="/login/logout?_method=DELETE" method="POST">
+                    <button class="btn btn-danger" type="submit">Log Out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
